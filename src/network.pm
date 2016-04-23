@@ -108,7 +108,7 @@ sub send_agent_startup{
 	) || die ;
        		$agent_sock->autoflush(1);
         	my $query = "FAILOVER-ENABLE";
-		$status =1;
+			$status =1;
         	$logger->debug("sending ".$query);
         	print $agent_sock "$query\n";
 
@@ -116,6 +116,34 @@ sub send_agent_startup{
 		$logger->debug($response);
         	close($agent_sock);
 		$logger->debug("socket to startup agent closed");
+	}catch {
+        	$logger->debug("caught error:".$_);
+        	$status = 0;
+	}; 
+	return $status;
+}
+
+sub send_service_check{
+	my $agent_ip=$_[1];
+    my $agent_port=$_[2];
+    my $agent_sock ;
+	my $status=0;
+
+	try{
+        	$agent_sock = new IO::Socket::INET (
+        	PeerAddr => $agent_ip,
+        	PeerPort => $agent_port,
+        	Proto => 'tcp',
+	) || die ;
+       		$agent_sock->autoflush(1);
+        	my $query = "STATUS-CHECK";
+			$status =1;
+        	$logger->debug("sending ".$query);
+        	print $agent_sock "$query\n";
+        	$response = <$agent_sock>;
+			$logger->debug($response);
+        	close($agent_sock);
+			$logger->debug("socket to startup agent closed");
 	}catch {
         	$logger->debug("caught error:".$_);
         	$status = 0;

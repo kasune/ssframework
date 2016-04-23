@@ -56,6 +56,7 @@ my $ping_ip_retry = "";
 my $ping_wait = "";
 my $next_ping_wat= "";
 my $cron_ip_ping_schedule = "";
+my $startup_agent_check_service = "";
 
 
 %config=&read_config('../conf/main.conf');
@@ -82,9 +83,12 @@ while (($key, $value) = each(%config)){
 		if($key eq "ip_ping_schedule"){
                         $cron_ip_ping_schedule=$value;
                 }
-		 if($key eq "check_remote_state"){
+		if($key eq "check_remote_state"){
                         $check_remote_state=$value;
                 }
+		 if($key eq "startup_agent_check_service"){
+						$startup_agent_check_service=$value;
+		}
 
 }
 
@@ -112,10 +116,15 @@ while (($key, $value) = each(%start_agents)){
 
 %script_location=&read_config('../conf/script.conf');
 my @script_list;
+my $regular_expression_service;
 
 while (($key, $value) = each(%script_location)){
-                        my $temp = $key.','.$value;
-                        push(@script_list,$temp);
+		if($key eq "regular_expression_service"){
+            $$regular_expression_service=$value;
+        }else{
+            my $temp = $key.','.$value;
+            push(@script_list,$temp);
+		}
 }
 
 #### line remover from timestamp.ama file 
@@ -184,6 +193,9 @@ sub get_server_ping_next_wait{
 sub get_check_remote_state{
    return $check_remote_state;
 }
+sub get_startup_agent_check_service{
+   return $startup_agent_check_service;
+}   
 sub get_ping_ip_list{
    return @ip_list;
 }
@@ -223,11 +235,13 @@ sub get_startup_mode{
 sub get_time_stamp_file_path{
    return $time_stamp_file_path;
 }
-
 sub get_backup_time_stamp_file_path{
    return $backup_time_stamp_file_path;
 }
 sub get_number_of_lines_to_be_remove{
    return $number_of_lines_to_be_remove;
+}
+sub get_regular_expression_service{
+   return $regular_expression_service;
 }
 1;

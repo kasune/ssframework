@@ -63,6 +63,7 @@ my $retry_count = configurator-> get_server_main_retry_count();
 my $server_ping_wait = configurator-> get_server_ping_wait();
 my $server_ping_next_wait = configurator-> get_server_ping_next_wait();
 my $check_remote_flag = eval configurator-> get_check_remote_state();
+my $check_service_onip = eval configurator-> get_startup_agent_check_service();
 #my $network_imp = network->new;
 
  $logger->debug('failover logic '.$reg_expression);
@@ -87,7 +88,7 @@ my $check_remote_flag = eval configurator-> get_check_remote_state();
 	if ($ip_status ne 0 && $ip_status ne 1){
 		$logger->debug("remote server in error mode - ".$ip_status);
 		network->send_snmp("remote server in error mode -".$remote_server_ip);
-		 $ip_status=0;	
+		$ip_status=0;	
 	}
 
    }
@@ -103,7 +104,17 @@ my $check_remote_flag = eval configurator-> get_check_remote_state();
 $logger->debug('faiover logic final - '.$reg_expression);
 
  if (eval $reg_expression){
-	$logger->debug("no failover");
+	$logger->debug("no failover after ping check");
+	if ($check_service_onip eq 1){
+		network->send_snmp("checking status of service");
+		my $service_state=check_service_state($reg_expression);
+		if (eval $service_state){
+			$logger->debug("no failover after service check");
+		}else{
+			$logger->debug("falling to FailOver mode as services fail");
+			failover(@agent_list);
+		}
+   }
  }else{
 	$logger->debug("falling to FailOver mode");
 	failover(@agent_list);
@@ -122,4 +133,17 @@ sub failover{
 			network->send_snmp("failure on startup ".$agent_conf[0]."-".$agent_conf[1]);
 		}
 	}
+}
+
+sub check_service_state{
+	network->send_snmp("Checking service");
+	my $reg=$_[1];
+	foreach my $agent_data(@agent_list){
+		my @agent_conf = split(',', $agent_data);	
+   		@agent_array = ($agent_conf[0],$agent_conf[1]);
+		$logger->debug("trigger service check procedure to ".$agent_conf[0]."-".$agent_conf[1]);
+		my $state = network->send_service_check(@agent_array);
+		$reg =~ s/$agent_conf[0]/$state/g;
+	}
+	return $reg;
 }

@@ -21,9 +21,11 @@ my $agent_ip    = configurator->get_startup_host();
 my $agent_port  = configurator->get_startup_port();
 my @script_list = configurator->get_script_list();
 my $agent_mode  = configurator->get_startup_mode();
+my $regular_expression_service  = configurator->get_regular_expression_service();
 
 $| = 1;
 my $sock ;
+my $service_state;
 
 try{
 	$sock = new IO::Socket::INET ( 
@@ -32,6 +34,7 @@ try{
         Proto => 'tcp', 
         Listen => 1, 
         Reuse => 1, 
+		Type => SOCK_STREAM,
 ) || die; 
 }catch {
 	$logger->debug("Server didn't started ".$_);
@@ -61,8 +64,8 @@ while ($q != -999){
 
 		$logger->debug("received request ".$command);
 		
-                if ($command eq "FAILOVER-ENABLE"){
-                        $logger->debug($command." received. failover trigering to modules");
+        if ($command eq "FAILOVER-ENABLE"){
+            $logger->debug($command." received. failover trigering to modules");
 			if ( $agent_mode eq "start"){
 				$logger->debug("starting modules");
 				start_module();		
@@ -73,11 +76,43 @@ while ($q != -999){
 		#	sleep(2);
 			print $new_sock "1\n";
 			sleep(2);
-                }else{    
-			$logger->debug($command." received");          }
-                }
+        }else{   
+			if ($command eq "STATUS-CHECK"){
+				$logger->debug($command." received. status check starting ...");
+				check_service();
+				print $new_sock "$service_state\n";
+			sleep(2);
+			}else{
+				$logger->debug($command." received");          
+				}
+			}
+			
+        }
 }
 
+sub check_service {
+	foreach my $script_data(@script_list){
+        my @agent_conf = split(',', $script_data);
+		my $module_state=1;
+		$logger->debug("Checking Module - ".$agent_conf[0]." Script-".$agent_conf[1]);
+		try { 
+	        $module_state=system("sh $agent_conf[1] status");
+
+		}catch{
+			$logger->debug("Error on status ".$_);
+			network->send_snmp("error in status check $agent_conf[0]");
+		};
+		$regular_expression_service==~ s/$agent_conf[0]/$module_state/g;
+	}
+	if (eval $regular_expression_service){
+		$logger->debug("services are up");
+		$service_state = 0;
+	}else{
+		$logger->debug("services failure detected");
+		$service_state = 1;
+		network->send_snmp("error in services $agent_conf[0]");
+	}
+}
 sub start_module {
 	
 	foreach my $script_data(@script_list){
@@ -118,11 +153,11 @@ sub start_module {
 				network->send_snmp("Module $agent_conf[0] fail permanently");		
 			}
 
-                }else{
+            }else{
 			$logger->debug("$agent_conf[0] is active");
 			$logger->debug("service start is not executed");
 			network->send_snmp("Module $agent_conf[0] already active");
-		}
+			}
         }
 	
 }
