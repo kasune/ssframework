@@ -12,7 +12,7 @@ use network;
 use Log::Log4perl qw(:easy);
 Log::Log4perl->easy_init($DEBUG);
 
-Log::Log4perl::init('../conf/log4p.conf');
+Log::Log4perl::init('../conf/log4pStartUPAgent.conf');
 $logger = Log::Log4perl->get_logger('HMS.GR.startup_agent');
 #use Net::SMTP;
 #use SendMail 2.09;
@@ -26,7 +26,7 @@ my $regular_expression_service  = configurator->get_regular_expression_service()
 $| = 1;
 my $sock ;
 my $service_state;
-
+#$logger->debug('startup agent waiting for socket....'.$agent_ip." ".$agent_port);
 try{
 	$sock = new IO::Socket::INET ( 
         LocalHost => $agent_ip, 
@@ -48,7 +48,7 @@ my $rhostname;
 my $i=0;
 
 while ($q != -999){
-	$logger->debug('startup agent waiting for socket....');
+	$logger->debug('startup agent waiting for socket....'.$agent_ip." ".$agent_port);
         my $new_sock = $sock->accept();
         $i++;   
 	$logger->debug($i.' times accepted');
@@ -106,10 +106,10 @@ sub check_service {
 	}
 	if (eval $regular_expression_service){
 		$logger->debug("services are up");
-		$service_state = 0;
+		$service_state = 1;
 	}else{
 		$logger->debug("services failure detected");
-		$service_state = 1;
+		$service_state = 0;
 		network->send_snmp("error in services $agent_conf[0]");
 	}
 }

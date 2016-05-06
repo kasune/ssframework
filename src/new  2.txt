@@ -1,0 +1,134 @@
+
+
+C:\WINDOWS\system32>ipconfig
+
+Windows IP Configuration
+
+
+Wireless LAN adapter Local Area Connection* 2:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 3:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Ethernet adapter Local Area Connection:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::d8a9:787b:430d:4ee7%9
+   IPv4 Address. . . . . . . . . . . : 172.16.12.245
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 172.16.12.3
+
+Wireless LAN adapter Wireless Network Connection:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::b893:b944:c854:8f1%7
+   IPv4 Address. . . . . . . . . . . : 192.168.1.12
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.1.1
+
+Ethernet adapter Bluetooth Network Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Tunnel adapter Teredo Tunneling Pseudo-Interface:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Tunnel adapter isatap.{2E7E160F-CDAD-4E34-BF26-C48EA366EA6D}:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Tunnel adapter isatap.{3BC7F620-CCE5-4682-8AE1-8DDC681C6379}:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+   
+ C:\WINDOWS\system32>route add 172.16.154.0 mask 255.255.255.0 172.16.12.201 if 9
+ 
+ 
+ 
+ C:\WINDOWS\system32>route print
+===========================================================================
+Interface List
+ 10...b4 b6 76 b3 e7 24 ......Microsoft Wi-Fi Direct Virtual Adapter
+  6...b6 b6 76 b3 e7 24 ......Microsoft Hosted Network Virtual Adapter
+  9...20 6a 8a 97 fc c2 ......Broadcom NetXtreme Gigabit Ethernet
+  7...b4 b6 76 b3 e7 23 ......Intel(R) Centrino(R) Advanced-N 6235
+ 24...b4 b6 76 b3 e7 27 ......Bluetooth Device (Personal Area Network)
+  1...........................Software Loopback Interface 1
+ 15...00 00 00 00 00 00 00 e0 Teredo Tunneling Pseudo-Interface
+ 52...00 00 00 00 00 00 00 e0 Microsoft ISATAP Adapter #4
+ 53...00 00 00 00 00 00 00 e0 Microsoft ISATAP Adapter #5
+===========================================================================
+
+IPv4 Route Table
+===========================================================================
+Active Routes:
+Network Destination        Netmask          Gateway       Interface  Metric
+          0.0.0.0          0.0.0.0      192.168.1.1     192.168.1.12     30
+          0.0.0.0          0.0.0.0      172.16.12.3    172.16.12.245    276
+        127.0.0.0        255.0.0.0         On-link         127.0.0.1    306
+        127.0.0.1  255.255.255.255         On-link         127.0.0.1    306
+  127.255.255.255  255.255.255.255         On-link         127.0.0.1    306
+      172.16.12.0    255.255.255.0         On-link     172.16.12.245    276
+    172.16.12.245  255.255.255.255         On-link     172.16.12.245    276
+    172.16.12.255  255.255.255.255         On-link     172.16.12.245    276
+     172.16.154.0    255.255.255.0    172.16.12.201    172.16.12.245     21
+      192.168.1.0    255.255.255.0         On-link      192.168.1.12    286
+     192.168.1.12  255.255.255.255         On-link      192.168.1.12    286
+    192.168.1.255  255.255.255.255         On-link      192.168.1.12    286
+        224.0.0.0        240.0.0.0         On-link         127.0.0.1    306
+        224.0.0.0        240.0.0.0         On-link     172.16.12.245    276
+        224.0.0.0        240.0.0.0         On-link      192.168.1.12    286
+  255.255.255.255  255.255.255.255         On-link         127.0.0.1    306
+  255.255.255.255  255.255.255.255         On-link     172.16.12.245    276
+  255.255.255.255  255.255.255.255         On-link      192.168.1.12    286
+===========================================================================
+Persistent Routes:
+  Network Address          Netmask  Gateway Address  Metric
+          0.0.0.0          0.0.0.0      172.16.12.3  Default
+===========================================================================
+
+IPv6 Route Table
+===========================================================================
+Active Routes:
+ If Metric Network Destination      Gateway
+  1    306 ::1/128                  On-link
+  9    276 fe80::/64                On-link
+  7    286 fe80::/64                On-link
+  7    286 fe80::b893:b944:c854:8f1/128
+                                    On-link
+  9    276 fe80::d8a9:787b:430d:4ee7/128
+                                    On-link
+  1    306 ff00::/8                 On-link
+  9    276 ff00::/8                 On-link
+  7    286 ff00::/8                 On-link
+===========================================================================
+Persistent Routes:
+  None
+
+C:\WINDOWS\system32>ping 172.16.12.201
+
+Pinging 172.16.12.201 with 32 bytes of data:
+Reply from 172.16.12.201: bytes=32 time=2ms TTL=255
+Reply from 172.16.12.201: bytes=32 time=1ms TTL=255
+Reply from 172.16.12.201: bytes=32 time<1ms TTL=255
+Reply from 172.16.12.201: bytes=32 time=1ms TTL=255
+
+Ping statistics for 172.16.12.201:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 2ms, Average = 1ms
+
+C:\WINDOWS\system32>
+ 
+ 
+ 

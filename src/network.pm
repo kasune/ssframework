@@ -6,7 +6,7 @@ use Net::Ping;
 use IO::Socket;
 use Try::Tiny;
 use Log::Log4perl qw(:easy);
-Log::Log4perl->easy_init($DEBUG);Log::Log4perl::init('../conf/log4p.conf');
+#Log::Log4perl->easy_init($DEBUG);Log::Log4perl::init('../conf/log4pMainServer.conf');
 $logger = Log::Log4perl->get_logger('HMS.GR.Main.network');
 
 $Mode = 066;     # Test for writeability; use 066 for read or write
@@ -64,10 +64,11 @@ sub check_via_remote_server{
         my $retry=eval $_[4];
         my $ping_w=eval $_[5];
         my $wait_n=eval $_[6];
-	my $data = 2;
-	my $error_code=0;
+		my $check_on=eval $_[7];
+	my $data = 0;
+	my $error_code=1;
 	my $client_sock ;	
-
+	my $query = "";
         #$logger->debug($check_server);
         #$logger->debug($rhostname.$port.$retry.$ping_w.$wait_n);
 
@@ -78,18 +79,27 @@ try{
         Proto => 'tcp',
 ) || die ;
 	$client_sock->autoflush(1);
-        my $query = "START:".$check_server.":".$retry.":".$ping_w.":".$wait_n;
-
+	
+	if ($check_on eq 1){
+        $query = "START:".$check_server.":".$retry.":".$ping_w.":".$wait_n;
+	}
+	if ($check_on eq 2){
+		my $agent_p = $retry;
+		$query = "STATUS-CHECK:".$check_server.":".$agent_p;
+		# $retry refer to agent port
+	}
+		
         $logger->debug("sending ".$query);
         print $client_sock "$query\n";
 
         $data = <$client_sock>;
         ##$sock->recv($buf2,1);
+		$logger->debug($data);
         close($client_sock);
 }catch {
 
 	$logger->debug("caught error:".$_);
-	$error_code = 1;
+	$data = 0;
 };	
         return $data;
 }
@@ -113,14 +123,14 @@ sub send_agent_startup{
         	print $agent_sock "$query\n";
 
         	$response = <$agent_sock>;
-		$logger->debug($response);
+			#$logger->debug($response);
         	close($agent_sock);
 		$logger->debug("socket to startup agent closed");
 	}catch {
         	$logger->debug("caught error:".$_);
-        	$status = 0;
+        	$response = 0;
 	}; 
-	return $status;
+	return $response;
 }
 
 sub send_service_check{
@@ -128,7 +138,7 @@ sub send_service_check{
     my $agent_port=$_[2];
     my $agent_sock ;
 	my $status=0;
-
+	$logger->debug("connecting to startup agent ".$agent_ip." ".$agent_port);
 	try{
         	$agent_sock = new IO::Socket::INET (
         	PeerAddr => $agent_ip,
@@ -137,18 +147,18 @@ sub send_service_check{
 	) || die ;
        		$agent_sock->autoflush(1);
         	my $query = "STATUS-CHECK";
-			$status =1;
+			#$status =1;
         	$logger->debug("sending ".$query);
         	print $agent_sock "$query\n";
         	$response = <$agent_sock>;
-			$logger->debug($response);
+			$logger->debug("response-".$response);
         	close($agent_sock);
 			$logger->debug("socket to startup agent closed");
 	}catch {
         	$logger->debug("caught error:".$_);
-        	$status = 0;
+        	$response = 0;
 	}; 
-	return $status;
+	return $response;
 }
 
 sub send_snmp{

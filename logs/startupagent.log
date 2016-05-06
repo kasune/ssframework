@@ -1,0 +1,679 @@
+2016/05/06 03:58:22 DEBUG> startup_agent.pl:44 main:: - --------------Startup Agent started---------------
+2016/05/06 03:58:22 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 03:59:06 DEBUG> startup_agent.pl:54 main:: - 1 times accepted
+2016/05/06 03:59:06 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 03:59:06 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 03:59:06 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 03:59:06 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 03:59:06 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 03:59:06 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 03:59:08 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 03:59:08 DEBUG> startup_agent.pl:54 main:: - 2 times accepted
+2016/05/06 03:59:08 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 03:59:08 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 03:59:08 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 03:59:08 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 03:59:08 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 03:59:08 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 03:59:10 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 03:59:10 DEBUG> startup_agent.pl:54 main:: - 3 times accepted
+2016/05/06 03:59:10 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 03:59:10 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 03:59:10 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 03:59:10 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 03:59:10 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 03:59:10 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 03:59:12 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 03:59:12 DEBUG> startup_agent.pl:54 main:: - 4 times accepted
+2016/05/06 03:59:12 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 03:59:12 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 03:59:12 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 03:59:12 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 03:59:12 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 03:59:12 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 03:59:14 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 03:59:24 DEBUG> startup_agent.pl:54 main:: - 5 times accepted
+2016/05/06 03:59:24 DEBUG> startup_agent.pl:57 main:: - received command - FAILOVER-ENABLE
+2016/05/06 03:59:24 DEBUG> startup_agent.pl:65 main:: - received request FAILOVER-ENABLE
+2016/05/06 03:59:24 DEBUG> startup_agent.pl:68 main:: - FAILOVER-ENABLE received. failover trigering to modules
+2016/05/06 03:59:24 DEBUG> startup_agent.pl:73 main:: - stoping modules
+2016/05/06 03:59:24 DEBUG> startup_agent.pl:170 main::stop_module - Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 03:59:25 DEBUG> startup_agent.pl:179 main::stop_module - status return-256
+2016/05/06 03:59:25 DEBUG> startup_agent.pl:205 main::stop_module - service.1 is stop already
+2016/05/06 03:59:25 DEBUG> startup_agent.pl:206 main::stop_module - service stop is not executed
+2016/05/06 03:59:25 DEBUG> network.pm:166 network::send_snmp - sent snmp - Module service.1 already stop
+2016/05/06 03:59:27 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:00:06 DEBUG> startup_agent.pl:54 main:: - 6 times accepted
+2016/05/06 04:00:06 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:00:06 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:00:06 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:00:06 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:00:06 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:00:06 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:00:08 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:00:08 DEBUG> startup_agent.pl:54 main:: - 7 times accepted
+2016/05/06 04:00:08 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:00:08 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:00:08 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:00:08 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:00:08 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:00:08 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:00:10 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:00:10 DEBUG> startup_agent.pl:54 main:: - 8 times accepted
+2016/05/06 04:00:10 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:00:10 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:00:10 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:00:10 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:00:10 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:00:10 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:00:12 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:00:12 DEBUG> startup_agent.pl:54 main:: - 9 times accepted
+2016/05/06 04:00:12 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:00:12 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:00:12 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:00:12 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:00:12 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:00:12 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:00:14 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:00:24 DEBUG> startup_agent.pl:54 main:: - 10 times accepted
+2016/05/06 04:00:24 DEBUG> startup_agent.pl:57 main:: - received command - FAILOVER-ENABLE
+2016/05/06 04:00:24 DEBUG> startup_agent.pl:65 main:: - received request FAILOVER-ENABLE
+2016/05/06 04:00:24 DEBUG> startup_agent.pl:68 main:: - FAILOVER-ENABLE received. failover trigering to modules
+2016/05/06 04:00:24 DEBUG> startup_agent.pl:73 main:: - stoping modules
+2016/05/06 04:00:24 DEBUG> startup_agent.pl:170 main::stop_module - Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:00:25 DEBUG> startup_agent.pl:179 main::stop_module - status return-256
+2016/05/06 04:00:25 DEBUG> startup_agent.pl:205 main::stop_module - service.1 is stop already
+2016/05/06 04:00:25 DEBUG> startup_agent.pl:206 main::stop_module - service stop is not executed
+2016/05/06 04:00:25 DEBUG> network.pm:166 network::send_snmp - sent snmp - Module service.1 already stop
+2016/05/06 04:00:27 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:01:06 DEBUG> startup_agent.pl:54 main:: - 11 times accepted
+2016/05/06 04:01:06 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:01:06 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:01:06 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:01:06 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:01:06 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:01:06 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:01:08 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:01:08 DEBUG> startup_agent.pl:54 main:: - 12 times accepted
+2016/05/06 04:01:08 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:01:08 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:01:08 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:01:08 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:01:08 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:01:08 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:01:10 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:01:10 DEBUG> startup_agent.pl:54 main:: - 13 times accepted
+2016/05/06 04:01:10 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:01:10 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:01:10 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:01:10 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:01:10 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:01:10 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:01:12 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:01:12 DEBUG> startup_agent.pl:54 main:: - 14 times accepted
+2016/05/06 04:01:12 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:01:12 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:01:12 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:01:12 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:01:12 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:01:12 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:01:14 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:01:24 DEBUG> startup_agent.pl:54 main:: - 15 times accepted
+2016/05/06 04:01:24 DEBUG> startup_agent.pl:57 main:: - received command - FAILOVER-ENABLE
+2016/05/06 04:01:24 DEBUG> startup_agent.pl:65 main:: - received request FAILOVER-ENABLE
+2016/05/06 04:01:24 DEBUG> startup_agent.pl:68 main:: - FAILOVER-ENABLE received. failover trigering to modules
+2016/05/06 04:01:24 DEBUG> startup_agent.pl:73 main:: - stoping modules
+2016/05/06 04:01:24 DEBUG> startup_agent.pl:170 main::stop_module - Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:01:25 DEBUG> startup_agent.pl:179 main::stop_module - status return-256
+2016/05/06 04:01:25 DEBUG> startup_agent.pl:205 main::stop_module - service.1 is stop already
+2016/05/06 04:01:25 DEBUG> startup_agent.pl:206 main::stop_module - service stop is not executed
+2016/05/06 04:01:25 DEBUG> network.pm:166 network::send_snmp - sent snmp - Module service.1 already stop
+2016/05/06 04:01:27 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:02:06 DEBUG> startup_agent.pl:54 main:: - 16 times accepted
+2016/05/06 04:02:06 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:02:06 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:02:06 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:02:06 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:02:06 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:02:06 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:02:08 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:02:08 DEBUG> startup_agent.pl:54 main:: - 17 times accepted
+2016/05/06 04:02:08 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:02:08 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:02:08 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:02:08 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:02:08 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:02:08 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:02:10 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:02:10 DEBUG> startup_agent.pl:54 main:: - 18 times accepted
+2016/05/06 04:02:10 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:02:10 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:02:10 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:02:10 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:02:10 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:02:10 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:02:12 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:02:12 DEBUG> startup_agent.pl:54 main:: - 19 times accepted
+2016/05/06 04:02:12 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:02:12 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:02:12 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:02:12 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:02:12 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:02:12 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:02:14 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:02:25 DEBUG> startup_agent.pl:54 main:: - 20 times accepted
+2016/05/06 04:02:25 DEBUG> startup_agent.pl:57 main:: - received command - FAILOVER-ENABLE
+2016/05/06 04:02:25 DEBUG> startup_agent.pl:65 main:: - received request FAILOVER-ENABLE
+2016/05/06 04:02:25 DEBUG> startup_agent.pl:68 main:: - FAILOVER-ENABLE received. failover trigering to modules
+2016/05/06 04:02:25 DEBUG> startup_agent.pl:73 main:: - stoping modules
+2016/05/06 04:02:25 DEBUG> startup_agent.pl:170 main::stop_module - Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:02:25 DEBUG> startup_agent.pl:179 main::stop_module - status return-256
+2016/05/06 04:02:25 DEBUG> startup_agent.pl:205 main::stop_module - service.1 is stop already
+2016/05/06 04:02:25 DEBUG> startup_agent.pl:206 main::stop_module - service stop is not executed
+2016/05/06 04:02:25 DEBUG> network.pm:166 network::send_snmp - sent snmp - Module service.1 already stop
+2016/05/06 04:02:27 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:03:06 DEBUG> startup_agent.pl:54 main:: - 21 times accepted
+2016/05/06 04:03:06 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:03:06 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:03:06 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:03:06 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:03:06 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:03:06 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:03:08 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:03:08 DEBUG> startup_agent.pl:54 main:: - 22 times accepted
+2016/05/06 04:03:08 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:03:08 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:03:08 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:03:08 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:03:08 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:03:08 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:03:10 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:03:10 DEBUG> startup_agent.pl:54 main:: - 23 times accepted
+2016/05/06 04:03:10 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:03:10 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:03:10 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:03:10 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:03:10 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:03:10 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:03:12 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:03:12 DEBUG> startup_agent.pl:54 main:: - 24 times accepted
+2016/05/06 04:03:12 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:03:12 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:03:12 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:03:12 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:03:12 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:03:12 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:03:14 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:03:25 DEBUG> startup_agent.pl:54 main:: - 25 times accepted
+2016/05/06 04:03:25 DEBUG> startup_agent.pl:57 main:: - received command - FAILOVER-ENABLE
+2016/05/06 04:03:25 DEBUG> startup_agent.pl:65 main:: - received request FAILOVER-ENABLE
+2016/05/06 04:03:25 DEBUG> startup_agent.pl:68 main:: - FAILOVER-ENABLE received. failover trigering to modules
+2016/05/06 04:03:25 DEBUG> startup_agent.pl:73 main:: - stoping modules
+2016/05/06 04:03:25 DEBUG> startup_agent.pl:170 main::stop_module - Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:03:25 DEBUG> startup_agent.pl:179 main::stop_module - status return-256
+2016/05/06 04:03:25 DEBUG> startup_agent.pl:205 main::stop_module - service.1 is stop already
+2016/05/06 04:03:25 DEBUG> startup_agent.pl:206 main::stop_module - service stop is not executed
+2016/05/06 04:03:25 DEBUG> network.pm:166 network::send_snmp - sent snmp - Module service.1 already stop
+2016/05/06 04:03:27 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:04:06 DEBUG> startup_agent.pl:54 main:: - 26 times accepted
+2016/05/06 04:04:06 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:04:06 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:04:06 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:04:06 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:04:06 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:04:06 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:04:08 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:04:08 DEBUG> startup_agent.pl:54 main:: - 27 times accepted
+2016/05/06 04:04:08 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:04:08 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:04:08 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:04:08 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:04:08 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:04:08 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:04:10 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:04:10 DEBUG> startup_agent.pl:54 main:: - 28 times accepted
+2016/05/06 04:04:10 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:04:10 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:04:10 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:04:10 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:04:10 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:04:10 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:04:12 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:04:12 DEBUG> startup_agent.pl:54 main:: - 29 times accepted
+2016/05/06 04:04:12 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:04:12 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:04:12 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:04:12 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:04:12 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:04:12 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:04:14 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:04:25 DEBUG> startup_agent.pl:54 main:: - 30 times accepted
+2016/05/06 04:04:25 DEBUG> startup_agent.pl:57 main:: - received command - FAILOVER-ENABLE
+2016/05/06 04:04:25 DEBUG> startup_agent.pl:65 main:: - received request FAILOVER-ENABLE
+2016/05/06 04:04:25 DEBUG> startup_agent.pl:68 main:: - FAILOVER-ENABLE received. failover trigering to modules
+2016/05/06 04:04:25 DEBUG> startup_agent.pl:73 main:: - stoping modules
+2016/05/06 04:04:25 DEBUG> startup_agent.pl:170 main::stop_module - Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:04:25 DEBUG> startup_agent.pl:179 main::stop_module - status return-256
+2016/05/06 04:04:25 DEBUG> startup_agent.pl:205 main::stop_module - service.1 is stop already
+2016/05/06 04:04:25 DEBUG> startup_agent.pl:206 main::stop_module - service stop is not executed
+2016/05/06 04:04:25 DEBUG> network.pm:166 network::send_snmp - sent snmp - Module service.1 already stop
+2016/05/06 04:04:27 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:05:06 DEBUG> startup_agent.pl:54 main:: - 31 times accepted
+2016/05/06 04:05:06 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:05:06 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:05:06 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:05:06 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:05:06 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:05:06 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:05:08 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:05:08 DEBUG> startup_agent.pl:54 main:: - 32 times accepted
+2016/05/06 04:05:08 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:05:08 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:05:08 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:05:08 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:05:08 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:05:08 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:05:10 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:05:10 DEBUG> startup_agent.pl:54 main:: - 33 times accepted
+2016/05/06 04:05:10 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:05:10 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:05:10 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:05:10 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:05:10 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:05:10 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:05:12 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:05:12 DEBUG> startup_agent.pl:54 main:: - 34 times accepted
+2016/05/06 04:05:12 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:05:12 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:05:12 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:05:12 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:05:12 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:05:12 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:05:14 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:05:25 DEBUG> startup_agent.pl:54 main:: - 35 times accepted
+2016/05/06 04:05:25 DEBUG> startup_agent.pl:57 main:: - received command - FAILOVER-ENABLE
+2016/05/06 04:05:25 DEBUG> startup_agent.pl:65 main:: - received request FAILOVER-ENABLE
+2016/05/06 04:05:25 DEBUG> startup_agent.pl:68 main:: - FAILOVER-ENABLE received. failover trigering to modules
+2016/05/06 04:05:25 DEBUG> startup_agent.pl:73 main:: - stoping modules
+2016/05/06 04:05:25 DEBUG> startup_agent.pl:170 main::stop_module - Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:05:25 DEBUG> startup_agent.pl:179 main::stop_module - status return-256
+2016/05/06 04:05:25 DEBUG> startup_agent.pl:205 main::stop_module - service.1 is stop already
+2016/05/06 04:05:25 DEBUG> startup_agent.pl:206 main::stop_module - service stop is not executed
+2016/05/06 04:05:25 DEBUG> network.pm:166 network::send_snmp - sent snmp - Module service.1 already stop
+2016/05/06 04:05:27 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:06:06 DEBUG> startup_agent.pl:54 main:: - 36 times accepted
+2016/05/06 04:06:06 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:06:06 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:06:06 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:06:06 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:06:06 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:06:06 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:06:08 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:06:08 DEBUG> startup_agent.pl:54 main:: - 37 times accepted
+2016/05/06 04:06:08 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:06:08 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:06:08 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:06:08 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:06:08 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:06:08 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:06:10 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:06:10 DEBUG> startup_agent.pl:54 main:: - 38 times accepted
+2016/05/06 04:06:10 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:06:10 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:06:10 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:06:10 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:06:10 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:06:10 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:06:12 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:06:12 DEBUG> startup_agent.pl:54 main:: - 39 times accepted
+2016/05/06 04:06:12 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:06:12 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:06:12 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:06:12 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:06:12 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:06:12 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:06:14 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:06:25 DEBUG> startup_agent.pl:54 main:: - 40 times accepted
+2016/05/06 04:06:25 DEBUG> startup_agent.pl:57 main:: - received command - FAILOVER-ENABLE
+2016/05/06 04:06:25 DEBUG> startup_agent.pl:65 main:: - received request FAILOVER-ENABLE
+2016/05/06 04:06:25 DEBUG> startup_agent.pl:68 main:: - FAILOVER-ENABLE received. failover trigering to modules
+2016/05/06 04:06:25 DEBUG> startup_agent.pl:73 main:: - stoping modules
+2016/05/06 04:06:25 DEBUG> startup_agent.pl:170 main::stop_module - Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:06:25 DEBUG> startup_agent.pl:179 main::stop_module - status return-256
+2016/05/06 04:06:25 DEBUG> startup_agent.pl:205 main::stop_module - service.1 is stop already
+2016/05/06 04:06:25 DEBUG> startup_agent.pl:206 main::stop_module - service stop is not executed
+2016/05/06 04:06:25 DEBUG> network.pm:166 network::send_snmp - sent snmp - Module service.1 already stop
+2016/05/06 04:06:27 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:07:06 DEBUG> startup_agent.pl:54 main:: - 41 times accepted
+2016/05/06 04:07:06 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:07:06 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:07:06 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:07:06 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:07:06 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:07:06 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:07:08 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:07:08 DEBUG> startup_agent.pl:54 main:: - 42 times accepted
+2016/05/06 04:07:08 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:07:08 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:07:08 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:07:08 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:07:08 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:07:08 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:07:10 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:07:10 DEBUG> startup_agent.pl:54 main:: - 43 times accepted
+2016/05/06 04:07:10 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:07:10 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:07:10 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:07:10 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:07:10 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:07:10 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:07:12 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:07:12 DEBUG> startup_agent.pl:54 main:: - 44 times accepted
+2016/05/06 04:07:12 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:07:12 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:07:12 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:07:12 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:07:12 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:07:12 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:07:14 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:07:25 DEBUG> startup_agent.pl:54 main:: - 45 times accepted
+2016/05/06 04:07:25 DEBUG> startup_agent.pl:57 main:: - received command - FAILOVER-ENABLE
+2016/05/06 04:07:25 DEBUG> startup_agent.pl:65 main:: - received request FAILOVER-ENABLE
+2016/05/06 04:07:25 DEBUG> startup_agent.pl:68 main:: - FAILOVER-ENABLE received. failover trigering to modules
+2016/05/06 04:07:25 DEBUG> startup_agent.pl:73 main:: - stoping modules
+2016/05/06 04:07:25 DEBUG> startup_agent.pl:170 main::stop_module - Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:07:25 DEBUG> startup_agent.pl:179 main::stop_module - status return-256
+2016/05/06 04:07:25 DEBUG> startup_agent.pl:205 main::stop_module - service.1 is stop already
+2016/05/06 04:07:25 DEBUG> startup_agent.pl:206 main::stop_module - service stop is not executed
+2016/05/06 04:07:25 DEBUG> network.pm:166 network::send_snmp - sent snmp - Module service.1 already stop
+2016/05/06 04:07:27 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:08:06 DEBUG> startup_agent.pl:54 main:: - 46 times accepted
+2016/05/06 04:08:06 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:08:06 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:08:06 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:08:06 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:08:06 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:08:06 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:08:08 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:08:08 DEBUG> startup_agent.pl:54 main:: - 47 times accepted
+2016/05/06 04:08:08 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:08:08 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:08:08 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:08:08 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:08:08 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:08:08 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:08:10 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:08:10 DEBUG> startup_agent.pl:54 main:: - 48 times accepted
+2016/05/06 04:08:10 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:08:10 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:08:10 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:08:10 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:08:10 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:08:10 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:08:12 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:08:12 DEBUG> startup_agent.pl:54 main:: - 49 times accepted
+2016/05/06 04:08:12 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:08:12 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:08:12 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:08:12 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:08:13 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:08:13 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:08:15 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:08:25 DEBUG> startup_agent.pl:54 main:: - 50 times accepted
+2016/05/06 04:08:25 DEBUG> startup_agent.pl:57 main:: - received command - FAILOVER-ENABLE
+2016/05/06 04:08:25 DEBUG> startup_agent.pl:65 main:: - received request FAILOVER-ENABLE
+2016/05/06 04:08:25 DEBUG> startup_agent.pl:68 main:: - FAILOVER-ENABLE received. failover trigering to modules
+2016/05/06 04:08:25 DEBUG> startup_agent.pl:73 main:: - stoping modules
+2016/05/06 04:08:25 DEBUG> startup_agent.pl:170 main::stop_module - Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:08:25 DEBUG> startup_agent.pl:179 main::stop_module - status return-256
+2016/05/06 04:08:25 DEBUG> startup_agent.pl:205 main::stop_module - service.1 is stop already
+2016/05/06 04:08:25 DEBUG> startup_agent.pl:206 main::stop_module - service stop is not executed
+2016/05/06 04:08:25 DEBUG> network.pm:166 network::send_snmp - sent snmp - Module service.1 already stop
+2016/05/06 04:08:27 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:09:06 DEBUG> startup_agent.pl:54 main:: - 51 times accepted
+2016/05/06 04:09:06 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:09:06 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:09:06 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:09:06 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:09:06 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:09:06 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:09:08 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:09:08 DEBUG> startup_agent.pl:54 main:: - 52 times accepted
+2016/05/06 04:09:08 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:09:08 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:09:08 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:09:08 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:09:08 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:09:08 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:09:10 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:09:10 DEBUG> startup_agent.pl:54 main:: - 53 times accepted
+2016/05/06 04:09:10 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:09:10 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:09:10 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:09:10 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:09:10 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:09:10 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:09:13 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:09:13 DEBUG> startup_agent.pl:54 main:: - 54 times accepted
+2016/05/06 04:09:13 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:09:13 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:09:13 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:09:13 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:09:13 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:09:13 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:09:15 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:09:25 DEBUG> startup_agent.pl:54 main:: - 55 times accepted
+2016/05/06 04:09:25 DEBUG> startup_agent.pl:57 main:: - received command - FAILOVER-ENABLE
+2016/05/06 04:09:25 DEBUG> startup_agent.pl:65 main:: - received request FAILOVER-ENABLE
+2016/05/06 04:09:25 DEBUG> startup_agent.pl:68 main:: - FAILOVER-ENABLE received. failover trigering to modules
+2016/05/06 04:09:25 DEBUG> startup_agent.pl:73 main:: - stoping modules
+2016/05/06 04:09:25 DEBUG> startup_agent.pl:170 main::stop_module - Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:09:25 DEBUG> startup_agent.pl:179 main::stop_module - status return-256
+2016/05/06 04:09:25 DEBUG> startup_agent.pl:205 main::stop_module - service.1 is stop already
+2016/05/06 04:09:25 DEBUG> startup_agent.pl:206 main::stop_module - service stop is not executed
+2016/05/06 04:09:25 DEBUG> network.pm:166 network::send_snmp - sent snmp - Module service.1 already stop
+2016/05/06 04:09:27 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:10:06 DEBUG> startup_agent.pl:54 main:: - 56 times accepted
+2016/05/06 04:10:06 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:10:06 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:10:06 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:10:06 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:10:06 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:10:06 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:10:08 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:10:08 DEBUG> startup_agent.pl:54 main:: - 57 times accepted
+2016/05/06 04:10:08 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:10:08 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:10:08 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:10:08 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:10:08 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:10:08 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:10:10 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:10:10 DEBUG> startup_agent.pl:54 main:: - 58 times accepted
+2016/05/06 04:10:10 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:10:10 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:10:10 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:10:10 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:10:10 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:10:10 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:10:12 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:10:13 DEBUG> startup_agent.pl:54 main:: - 59 times accepted
+2016/05/06 04:10:13 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:10:13 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:10:13 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:10:13 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:10:13 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:10:13 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:10:15 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:10:25 DEBUG> startup_agent.pl:54 main:: - 60 times accepted
+2016/05/06 04:10:25 DEBUG> startup_agent.pl:57 main:: - received command - FAILOVER-ENABLE
+2016/05/06 04:10:25 DEBUG> startup_agent.pl:65 main:: - received request FAILOVER-ENABLE
+2016/05/06 04:10:25 DEBUG> startup_agent.pl:68 main:: - FAILOVER-ENABLE received. failover trigering to modules
+2016/05/06 04:10:25 DEBUG> startup_agent.pl:73 main:: - stoping modules
+2016/05/06 04:10:25 DEBUG> startup_agent.pl:170 main::stop_module - Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:10:25 DEBUG> startup_agent.pl:179 main::stop_module - status return-256
+2016/05/06 04:10:25 DEBUG> startup_agent.pl:205 main::stop_module - service.1 is stop already
+2016/05/06 04:10:25 DEBUG> startup_agent.pl:206 main::stop_module - service stop is not executed
+2016/05/06 04:10:25 DEBUG> network.pm:166 network::send_snmp - sent snmp - Module service.1 already stop
+2016/05/06 04:10:27 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:11:06 DEBUG> startup_agent.pl:54 main:: - 61 times accepted
+2016/05/06 04:11:06 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:11:06 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:11:06 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:11:06 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:11:06 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:11:06 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:11:08 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:11:08 DEBUG> startup_agent.pl:54 main:: - 62 times accepted
+2016/05/06 04:11:08 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:11:08 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:11:08 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:11:08 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:11:08 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:11:08 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:11:10 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:11:10 DEBUG> startup_agent.pl:54 main:: - 63 times accepted
+2016/05/06 04:11:10 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:11:10 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:11:10 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:11:10 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:11:10 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:11:10 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:11:13 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:11:13 DEBUG> startup_agent.pl:54 main:: - 64 times accepted
+2016/05/06 04:11:13 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:11:13 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:11:13 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:11:13 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:11:13 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:11:13 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:11:15 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:11:25 DEBUG> startup_agent.pl:54 main:: - 65 times accepted
+2016/05/06 04:11:25 DEBUG> startup_agent.pl:57 main:: - received command - FAILOVER-ENABLE
+2016/05/06 04:11:25 DEBUG> startup_agent.pl:65 main:: - received request FAILOVER-ENABLE
+2016/05/06 04:11:25 DEBUG> startup_agent.pl:68 main:: - FAILOVER-ENABLE received. failover trigering to modules
+2016/05/06 04:11:25 DEBUG> startup_agent.pl:73 main:: - stoping modules
+2016/05/06 04:11:25 DEBUG> startup_agent.pl:170 main::stop_module - Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:11:25 DEBUG> startup_agent.pl:179 main::stop_module - status return-256
+2016/05/06 04:11:25 DEBUG> startup_agent.pl:205 main::stop_module - service.1 is stop already
+2016/05/06 04:11:25 DEBUG> startup_agent.pl:206 main::stop_module - service stop is not executed
+2016/05/06 04:11:25 DEBUG> network.pm:166 network::send_snmp - sent snmp - Module service.1 already stop
+2016/05/06 04:11:27 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:12:06 DEBUG> startup_agent.pl:54 main:: - 66 times accepted
+2016/05/06 04:12:06 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:12:06 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:12:06 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:12:06 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:12:06 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:12:06 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:12:08 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:12:08 DEBUG> startup_agent.pl:54 main:: - 67 times accepted
+2016/05/06 04:12:08 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:12:08 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:12:08 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:12:08 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:12:08 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:12:08 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:12:10 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:12:10 DEBUG> startup_agent.pl:54 main:: - 68 times accepted
+2016/05/06 04:12:10 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:12:10 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:12:10 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:12:10 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:12:11 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:12:11 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:12:13 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:12:13 DEBUG> startup_agent.pl:54 main:: - 69 times accepted
+2016/05/06 04:12:13 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:12:13 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:12:13 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:12:13 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:12:13 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:12:13 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:12:15 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:12:25 DEBUG> startup_agent.pl:54 main:: - 70 times accepted
+2016/05/06 04:12:25 DEBUG> startup_agent.pl:57 main:: - received command - FAILOVER-ENABLE
+2016/05/06 04:12:25 DEBUG> startup_agent.pl:65 main:: - received request FAILOVER-ENABLE
+2016/05/06 04:12:25 DEBUG> startup_agent.pl:68 main:: - FAILOVER-ENABLE received. failover trigering to modules
+2016/05/06 04:12:25 DEBUG> startup_agent.pl:73 main:: - stoping modules
+2016/05/06 04:12:25 DEBUG> startup_agent.pl:170 main::stop_module - Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:12:25 DEBUG> startup_agent.pl:179 main::stop_module - status return-256
+2016/05/06 04:12:25 DEBUG> startup_agent.pl:205 main::stop_module - service.1 is stop already
+2016/05/06 04:12:25 DEBUG> startup_agent.pl:206 main::stop_module - service stop is not executed
+2016/05/06 04:12:25 DEBUG> network.pm:166 network::send_snmp - sent snmp - Module service.1 already stop
+2016/05/06 04:12:27 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:13:06 DEBUG> startup_agent.pl:54 main:: - 71 times accepted
+2016/05/06 04:13:06 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:13:06 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:13:06 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:13:06 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:13:06 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:13:06 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:13:08 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:13:08 DEBUG> startup_agent.pl:54 main:: - 72 times accepted
+2016/05/06 04:13:08 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:13:08 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:13:08 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:13:08 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:13:08 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:13:08 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:13:10 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:13:10 DEBUG> startup_agent.pl:54 main:: - 73 times accepted
+2016/05/06 04:13:10 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:13:10 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:13:10 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:13:10 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:13:10 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:13:10 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:13:13 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:13:13 DEBUG> startup_agent.pl:54 main:: - 74 times accepted
+2016/05/06 04:13:13 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:13:13 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:13:13 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:13:13 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:13:13 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:13:13 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:13:15 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:13:25 DEBUG> startup_agent.pl:54 main:: - 75 times accepted
+2016/05/06 04:13:25 DEBUG> startup_agent.pl:57 main:: - received command - FAILOVER-ENABLE
+2016/05/06 04:13:25 DEBUG> startup_agent.pl:65 main:: - received request FAILOVER-ENABLE
+2016/05/06 04:13:25 DEBUG> startup_agent.pl:68 main:: - FAILOVER-ENABLE received. failover trigering to modules
+2016/05/06 04:13:25 DEBUG> startup_agent.pl:73 main:: - stoping modules
+2016/05/06 04:13:25 DEBUG> startup_agent.pl:170 main::stop_module - Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:13:25 DEBUG> startup_agent.pl:179 main::stop_module - status return-256
+2016/05/06 04:13:25 DEBUG> startup_agent.pl:205 main::stop_module - service.1 is stop already
+2016/05/06 04:13:25 DEBUG> startup_agent.pl:206 main::stop_module - service stop is not executed
+2016/05/06 04:13:25 DEBUG> network.pm:166 network::send_snmp - sent snmp - Module service.1 already stop
+2016/05/06 04:13:27 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:14:06 DEBUG> startup_agent.pl:54 main:: - 76 times accepted
+2016/05/06 04:14:06 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:14:06 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:14:06 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:14:06 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:14:06 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:14:06 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:14:08 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:14:08 DEBUG> startup_agent.pl:54 main:: - 77 times accepted
+2016/05/06 04:14:08 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:14:08 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:14:08 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:14:08 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:14:08 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:14:08 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:14:11 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:14:11 DEBUG> startup_agent.pl:54 main:: - 78 times accepted
+2016/05/06 04:14:11 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:14:11 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:14:11 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:14:11 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:14:11 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:14:11 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:14:13 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777
+2016/05/06 04:14:13 DEBUG> startup_agent.pl:54 main:: - 79 times accepted
+2016/05/06 04:14:13 DEBUG> startup_agent.pl:57 main:: - received command - STATUS-CHECK
+2016/05/06 04:14:13 DEBUG> startup_agent.pl:65 main:: - received request STATUS-CHECK
+2016/05/06 04:14:13 DEBUG> startup_agent.pl:81 main:: - STATUS-CHECK received. status check starting ...
+2016/05/06 04:14:13 DEBUG> startup_agent.pl:97 main::check_service - Checking Module - service.1 Script-/etc/init.d/vsftpd
+2016/05/06 04:14:13 DEBUG> startup_agent.pl:111 main::check_service - services failure detected
+2016/05/06 04:14:13 DEBUG> network.pm:166 network::send_snmp - sent snmp - error in services 
+2016/05/06 04:14:15 DEBUG> startup_agent.pl:51 main:: - startup agent waiting for socket....0.0.0.0 7777

@@ -12,7 +12,7 @@ use network;
 use Log::Log4perl qw(:easy);
 Log::Log4perl->easy_init($DEBUG);
 
-Log::Log4perl::init('../conf/log4p.conf');
+Log::Log4perl::init('../conf/log4pRemoteServer.conf');
 $logger = Log::Log4perl->get_logger('HMS.GR.remote_server');
 #use Net::SMTP;
 #use SendMail 2.09;
@@ -20,6 +20,7 @@ $logger = Log::Log4perl->get_logger('HMS.GR.remote_server');
 my $host_ip= configurator->get_server_ip();
 my $host_port= configurator->get_server_port();
 my $no_of_clients= configurator->get_no_of_clients();
+my $agent_service_check = configurator->get_startup_agent_check();
 $| = 1;
 my $sock ;
 
@@ -70,7 +71,7 @@ while ($q != -999){
 		$logger->debug("received request ".@input_command);
 		$logger->debug($command);
                 if ($command eq "START"){
-                        $logger->debug($command." received. checking server status");
+            #$logger->debug($command." received");
 			$ip_status = network->ping_ip(@ping_array);
 			$logger->debug("ping status - ".$ip_status);
 #			$logger->debug($client_ip.$client_port);
@@ -82,7 +83,13 @@ while ($q != -999){
                         #$rhostname=$input[1];
                         #$command=$input[3];
                         #$logfilename=$input[4];      
-			$logger->debug($command." received");          }
+						#$logger->debug($command." received"); 
+						my @agent_array = ($server_ip,$retry_count);
+						$ip_status = network->send_service_check(@agent_array );
+						#$logger->debug("send service check ".$ip_status); 
+						sleep(2);
+						print $new_sock "$ip_status\n";
+			}
                 }
 }
 
